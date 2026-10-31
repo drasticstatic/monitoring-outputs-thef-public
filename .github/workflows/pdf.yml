@@ -1,0 +1,103 @@
+name: Render pages to PDF and publish the front end
+
+# Every new or changed arb/<date>/README.md and perps/<date>/README.md becomes pdf/<lane>/<date>.pdf
+# (brass on slate), then the repository is published to GitHub Pages: index.html lists every dated report.
+# The publish job is inert until Pages is switched on with the "GitHub Actions" source.
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["pdf/**"]
+  workflow_dispatch:
+    inputs:
+      all:
+        description: "Re-render every page"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pdf
+  cancel-in-progress: false
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    outputs:
+      pages: ${{ steps.pages.outputs.enabled }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: Render new and changed pages (accordions opened for print)
+        env:
+          BEFORE: ${{ github.event.before }}
+          ALL: ${{ inputs.all }}
+        run: |
+          changed=""
+          if [ -n "${BEFORE:-}" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ] && git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            changed="$(git diff --name-only "$BEFORE" HEAD)"
+          fi
+          css='img{display:inline-block !important;vertical-align:-3px;margin:0 3px} body{font-family:Helvetica,Arial,sans-serif;font-size:10.5pt} h1{color:#334155} h2{color:#334155;border-bottom:2px solid #d9a441;padding-bottom:4px} h3,h4{color:#8a6a2a} a{color:#d97706} blockquote{border-left:4px solid #d97706;background:#f1f5f9;padding:6px 14px;margin-left:0} table{font-size:8.6pt;border-collapse:collapse} th{background:#f1f5f9;color:#334155} td,th{padding:3px 6px} details>summary{font-weight:600;color:#8a6a2a} hr{border:0;border-top:1px solid #d9a441;opacity:.6} sub{color:#8a6a2a}'
+          for f in arb/*/README.md perps/*/README.md; do
+            [ -f "$f" ] || continue
+            dir="$(dirname "$f")"; lane="${dir%%/*}"; day="$(basename "$dir")"; out="pdf/$lane/$day.pdf"
+            if [ "${ALL:-false}" = "true" ] || [ ! -f "$out" ] || printf '%s\n' "$changed" | grep -qxF "$f"; then
+              mkdir -p "pdf/$lane"
+              sed -e 's/<details>/<details open>/g' \
+                  -e 's/^> \[!TIP\]/> **Tip.**/' -e 's/^> \[!NOTE\]/> **Note.**/' \
+                  -e 's/^> \[!IMPORTANT\]/> **Important.**/' -e 's/^> \[!WARNING\]/> **Warning.**/' \
+                  "$f" > "$dir/_print.md"
+              npx -y md-to-pdf@5 "$dir/_print.md" --basedir . --css "$css" \
+                --launch-options '{"args":["--no-sandbox"]}' \
+                --pdf-options '{"format":"Letter","margin":{"top":"16mm","bottom":"16mm","left":"14mm","right":"14mm"},"printBackground":true}'
+              mv "$dir/_print.pdf" "$out"; rm -f "$dir/_print.md"; echo "rendered $out"
+            fi
+          done
+      - name: Commit PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pdf
+          if git diff --cached --quiet; then echo "no PDF changed"; exit 0; fi
+          git commit -m ":memo: docs(pdf): render the monitoring pages to PDF"
+          git pull --rebase --quiet origin main
+          git push origin HEAD:main
+      - name: Is Pages switched on (GitHub Actions source)?
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          kind="$(gh api "repos/${{ github.repository }}/pages" --jq .build_type 2>/dev/null || true)"
+          if [ "$kind" = "workflow" ]; then echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else echo "enabled=false" >> "$GITHUB_OUTPUT"; echo "::notice::Pages is not switched on with the GitHub Actions source; skipping the publish."; fi
+
+  publish:
+    needs: pdf
+    if: needs.pdf.outputs.pages == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - name: Stage the site (the front end, the pages, the PDFs)
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp -R assets arb perps _site/
+          [ -d pdf ] && cp -R pdf _site/ || true
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4

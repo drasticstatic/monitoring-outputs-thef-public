@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="monitoring-outputs: the observers' dated reports">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#334155"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9a441" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="240" rx="18" fill="url(#bg)"/>
+  <g stroke="#f1f5f9" stroke-opacity=".07" stroke-width="1">
+    <path d="M0 60H1200M0 120H1200M0 180H1200"/>
+    <path d="M150 0V240M300 0V240M450 0V240M600 0V240M750 0V240M900 0V240M1050 0V240"/>
+  </g>
+  <!-- a heartbeat trace: quiet polls, one dislocation, the close -->
+  <path d="M720 166 L760 164 L800 167 L830 120 L850 196 L872 92 L896 176 L930 160 L990 163 L1050 158 L1110 161 L1170 156 L1170 240 L720 240 Z" fill="url(#fade)"/>
+  <path d="M720 166 L760 164 L800 167 L830 120 L850 196 L872 92 L896 176 L930 160 L990 163 L1050 158 L1110 161 L1170 156" fill="none" stroke="#d9a441" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="872" cy="92" r="6" fill="#d9a441"/>
+  <circle cx="872" cy="92" r="14" fill="none" stroke="#d9a441" stroke-opacity=".45" stroke-width="2"/>
+  <text x="64" y="104" font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#d9a441" letter-spacing=".5">monitoring-outputs</text>
+  <text x="66" y="146" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#e2e8f0">the observers' dated reports, one page a day</text>
+  <text x="66" y="186" font-family="Menlo, Consolas, monospace" font-size="15" fill="#94a3b8">arb/ · perps/ · monitor-only · the lab for The Holy Earth Foundation</text>
+</svg>

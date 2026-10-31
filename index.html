@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoring outputs</title>
+  <meta name="description" content="The lab's monitor-only observers, one page a day, in costume: every dated report with its PDF.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23334155'/%3E%3Cpath d='M4 20h6l3-9 4 15 3-11 2 5h6' fill='none' stroke='%23d9a441' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <style>
+    /* brass on slate, the lab's tone (TONES.md); amber d97706 for links, The Holy Earth Foundation's accent */
+    :root {
+      --bg: #f8fafc; --panel: #ffffff; --line: #e2e8f0; --line-2: #cbd5e1;
+      --text: #1e293b; --muted: #64748b; --head: #334155;
+      --brass: #d9a441; --brass-ink: #8a6a2a; --link: #b45309; --tint: #f1f5f9; --chip: #fef3c7;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+      --r: 12px;
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0f172a; --panel: #162033; --line: #23314a; --line-2: #33435f;
+        --text: #e2e8f0; --muted: #94a3b8; --head: #f1f5f9;
+        --brass: #d9a441; --brass-ink: #e8c27a; --link: #f0b45a; --tint: #1b2740; --chip: #3a2f17;
+        color-scheme: dark;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0f172a; --panel: #162033; --line: #23314a; --line-2: #33435f;
+      --text: #e2e8f0; --muted: #94a3b8; --head: #f1f5f9;
+      --brass: #d9a441; --brass-ink: #e8c27a; --link: #f0b45a; --tint: #1b2740; --chip: #3a2f17;
+      color-scheme: dark;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--sans); background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.55; min-height: 100vh; }
+    a { color: var(--link); text-underline-offset: 3px; }
+    a:hover { color: var(--brass); }
+    :focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; border-radius: 6px; }
+    .mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+
+    header.top { border-bottom: 1px solid var(--line); background: var(--panel); position: sticky; top: 0; z-index: 5; }
+    header.top .wrap { display: flex; align-items: center; gap: 12px; padding-top: 12px; padding-bottom: 12px; }
+    .mark { width: 34px; height: 34px; flex: 0 0 auto; }
+    .brand { display: flex; flex-direction: column; min-width: 0; }
+    .brand b { font-weight: 800; color: var(--head); letter-spacing: .01em; font-size: 1.02rem; }
+    .brand small { color: var(--muted); font-size: .78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sp { flex: 1; }
+    .toggle { font: inherit; font-size: .78rem; font-weight: 600; color: var(--muted); background: transparent; border: 1px solid var(--line-2); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+    .toggle:hover { color: var(--text); border-color: var(--brass); }
+
+    .hero { padding: 36px 0 8px; }
+    .hero h1 { font-size: clamp(1.6rem, 4.6vw, 2.3rem); line-height: 1.15; color: var(--head); font-weight: 800; letter-spacing: -.01em; }
+    .hero h1 span { color: var(--brass-ink); }
+    .hero p { margin-top: 12px; color: var(--muted); max-width: 62ch; }
+    .lanes { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+    .lanes a, .chip { display: inline-flex; align-items: center; gap: 6px; font-size: .78rem; font-weight: 600; padding: 4px 11px; border-radius: 999px; border: 1px solid var(--line-2); color: var(--text); text-decoration: none; background: var(--panel); }
+    .lanes a:hover { border-color: var(--brass); }
+    .chip { background: var(--chip); border-color: transparent; color: var(--brass-ink); font-size: .7rem; padding: 2px 9px; vertical-align: 2px; }
+
+    main section { margin-top: 28px; }
+    h2 { font-size: 1.08rem; color: var(--head); font-weight: 700; padding-bottom: 8px; border-bottom: 2px solid var(--brass); margin-bottom: 14px; }
+    .latest { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 18px; }
+    .latest h2 { border-bottom-color: var(--line); }
+    .tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+    .tiles div { background: var(--tint); border-radius: 10px; padding: 10px 12px; min-width: 0; }
+    .tiles dt { font-size: .72rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+    .tiles dd { font-size: 1.06rem; font-weight: 600; color: var(--head); margin-top: 2px; overflow-wrap: anywhere; }
+    .latest .line { margin-top: 14px; color: var(--text); }
+    .actions { margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .btn { display: inline-block; font-weight: 600; font-size: .86rem; padding: 8px 14px; border-radius: 10px; background: var(--brass); color: #1e293b; text-decoration: none; }
+    .btn:hover { color: #1e293b; filter: brightness(1.06); }
+    .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--line-2); }
+
+    ol.reports { list-style: none; display: grid; gap: 10px; }
+    ol.reports li { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--brass); border-radius: 10px; padding: 12px 14px; }
+    ol.reports .d { font-weight: 600; color: var(--head); }
+    ol.reports p { margin-top: 4px; font-size: .9rem; color: var(--text); overflow-wrap: anywhere; }
+    ol.reports .links { margin-top: 8px; display: flex; gap: 14px; flex-wrap: wrap; font-size: .84rem; font-weight: 600; }
+
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; }
+    .card h3 { font-size: .95rem; color: var(--head); margin-bottom: 6px; }
+    .card p { font-size: .9rem; color: var(--muted); }
+    .card p + p { margin-top: 8px; }
+    footer { margin: 40px 0 28px; padding-top: 14px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); }
+    footer p + p { margin-top: 6px; }
+
+    @media (max-width: 720px) {
+      .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cols { grid-template-columns: 1fr; }
+      .hero { padding-top: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#334155"/><path d="M4 20h6l3-9 4 15 3-11 2 5h6" fill="none" stroke="#d9a441" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="brand"><b>Monitoring outputs</b><small>the lab's observers · The Holy Earth Foundation</small></div>
+      <span class="sp"></span>
+      <button class="toggle" id="theme" type="button" aria-label="Switch between light and dark">Dark</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>One page a day from observers that <span>only watch</span>.</h1>
+      <p>Each night the lab's arbitrage observer writes down what it saw on Arbitrum's decentralised exchanges: how long it watched, how many price gaps opened, whether any would have paid after fees and gas, and how long they lasted. It holds no wallet that trades and sends no transaction. Pairs and venues wear stage names here; the numbers are the real study.</p>
+      <div class="lanes">
+        <a href="#reports">Arbitrage, dated reports</a>
+        <a href="#perps">Perps listener</a>
+        <a href="#costume">How the costume works</a>
+      </div>
+    </div>
+
+    <div id="reports">
+<!-- reports:start -->
+<section class="latest" aria-labelledby="latest-h"><h2 id="latest-h">Latest day <span class="mono">2026-10-31</span> <span class="chip">still running</span></h2>
+<dl class="tiles">
+<div><dt>Observed</dt><dd class="mono">9.83 h</dd></div>
+<div><dt>Polls</dt><dd class="mono">2,351</dd></div>
+<div><dt>Candidates</dt><dd class="mono">1,772</dd></div>
+<div><dt>Cleared costs</dt><dd class="mono">0</dd></div>
+<div><dt>Would have fired</dt><dd class="mono">0</dd></div>
+<div><dt>Chases</dt><dd class="mono">85</dd></div>
+<div><dt>Study to date</dt><dd class="mono">113.91 of 168 h</dd></div>
+<div><dt>Last poll</dt><dd class="mono">Oct 31, 09:49 ET</dd></div>
+</dl>
+<p class="line">9.83 h observed, 2,351 polls, 1,772 candidates, 0 cleared costs, 0 would have fired; 85 chases; best -0.000007 ETH on lucky-glacial-urchin Rowan Cross→Juniper at 0.01 ETH.</p>
+<p class="actions"><a class="btn" href="https://github.com/drasticstatic/monitoring-outputs-thef-public/blob/main/arb/2026-10-31/README.md">Read the page</a> <a class="btn ghost" href="pdf/arb/2026-10-31.pdf">PDF</a></p></section>
+<section aria-labelledby="all-h"><h2 id="all-h">Every dated report</h2><ol class="reports">
+<li><div class="d mono">2026-10-31 <span class="chip">still running</span></div><p>9.83 h observed, 2,351 polls, 1,772 candidates, 0 cleared costs, 0 would have fired; 85 chases; best -0.000007 ETH on lucky-glacial-urchin Rowan Cross→Juniper at 0.01 ETH.</p><div class="links"><a href="https://github.com/drasticstatic/monitoring-outputs-thef-public/blob/main/arb/2026-10-31/README.md">Page</a><a href="pdf/arb/2026-10-31.pdf">PDF</a><a href="arb/2026-10-31/README.md">Markdown</a></div></li>
+<li><div class="d mono">2026-10-30</div><p>18.06 h observed, 4,324 polls, 3,715 candidates, 0 cleared costs, 0 would have fired; 197 chases; best -0.000005 ETH on curious-oblique-egret Juniper→Rowan Quay at 0.01 ETH.</p><div class="links"><a href="https://github.com/drasticstatic/monitoring-outputs-thef-public/blob/main/arb/2026-10-30/README.md">Page</a><a href="pdf/arb/2026-10-30.pdf">PDF</a><a href="arb/2026-10-30/README.md">Markdown</a></div></li>
+<li><div class="d mono">2026-10-29</div><p>7.60 h observed, 1,818 polls, 1,362 candidates, 0 cleared costs, 0 would have fired; 65 chases; best -0.000006 ETH on lucky-glacial-urchin Rowan Cross→Juniper at 0.01 ETH.</p><div class="links"><a href="https://github.com/drasticstatic/monitoring-outputs-thef-public/blob/main/arb/2026-10-29/README.md">Page</a><a href="pdf/arb/2026-10-29.pdf">PDF</a><a href="arb/2026-10-29/README.md">Markdown</a></div></li>
+<li><div class="d mono">2026-10-28</div><p>24.00 h observed, 5,698 polls, 4,470 candidates, 0 cleared costs, 0 would have fired; 230 chases; best -0.000005 ETH on lucky-glacial-urchin Juniper→Rowan Cross at 0.01 ETH.</p><div class="links"><a href="https://github.com/drasticstatic/monitoring-outputs-thef-public/blob/main/arb/2026-10-28/README.md">Page</a><a href="pdf/arb/2026-10-28.pdf">PDF</a><a href="arb/2026-10-28/README.md">Markdown</a></div></li>
+<li><div class="d mono">2026-10-27</div><p>24.01 h observed, 5,740 polls, 4,299 candidates, 0 cleared costs, 0 would have fired; 215 chases; best -0.000006 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.</p><div class="links"><a href="https://github.com/drasticstatic/monitoring-outputs-thef-public/blob/main/arb/2026-10-27/README.md">Page</a><a href="pdf/arb/2026-10-27.pdf">PDF</a><a href="arb/2026-10-27/README.md">Markdown</a></div></li>
+<li><div class="d mono">2026-10-26</div><p>24.16 h observed, 5,704 polls, 3,289 candidates, 0 cleared costs, 0 would have fired; 97 chases; best -0.000007 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.</p><div class="links"><a href="https://github.com/drasticstatic/monitoring-outputs-thef-public/blob/main/arb/2026-10-26/README.md">Page</a><a href="pdf/arb/2026-10-26.pdf">PDF</a><a href="arb/2026-10-26/README.md">Markdown</a></div></li>
+<li><div class="d mono">2026-10-25</div><p>6.24 h observed, 1,481 polls, 432 candidates, 0 cleared costs, 0 would have fired; 0 chases; best -0.000008 ETH on curious-umbral-gecko Juniper→Rowan Quay at 0.05 ETH.</p><div class="links"><a href="https://github.com/drasticstatic/monitoring-outputs-thef-public/blob/main/arb/2026-10-25/README.md">Page</a><a href="pdf/arb/2026-10-25.pdf">PDF</a><a href="arb/2026-10-25/README.md">Markdown</a></div></li>
+</ol></section>
+<!-- reports:end -->
+    </div>
+
+    <section id="perps" aria-labelledby="perps-h">
+      <h2 id="perps-h">Perps listener</h2>
+      <div class="card"><p>The Perps listener's pages arrive in <a href="perps/README.md">perps/</a> from its own session, once they are marked public. It is read-only too: it never places, changes or cancels an order. Nothing published yet.</p></div>
+    </section>
+
+    <section id="costume" aria-labelledby="costume-h">
+      <h2 id="costume-h">Reading the pages</h2>
+      <div class="cols">
+        <div class="card">
+          <h3>The costume</h3>
+          <p>A pair is a character (<span class="mono">curious-oblique-egret</span>); a venue is a house and its fee tier a ward, so <span class="mono">Juniper→Rowan Quay</span> is a route between two houses. Pool depths are scaled by a secret factor per pair. The names stay the same night after night, so you can follow a character.</p>
+          <p>Counts, spreads in percent, gas, hours, lifetimes and outcomes are untouched. Every page passes a leak guard before it is written.</p>
+        </div>
+        <div class="card">
+          <h3>The words</h3>
+          <p><b>Observed</b> hours count only time the observer was actually polling; a gap over two hours does not count. A <b>candidate</b> is a gap wide enough to quote; <b>cleared</b> means a quoted round trip paid after gas; <b>would fire</b> means it also met the threshold. A <b>chase</b> follows one gap block by block until it closes.</p>
+          <p>The live study: <a href="https://drasticstatic.github.io/trading-bot-arbitrage-public/">the public dashboard</a> and its <a href="https://drasticstatic.github.io/trading-bot-arbitrage-public/edge/latest.json">nightly snapshot</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Written nightly at 23:55 ET, pushed at 23:58; each PDF is rendered by the repository's workflow a minute after its page lands. List updated <span id="updated">Oct 31, 09:49 ET</span>.</p>
+      <p><a href="https://github.com/drasticstatic/monitoring-outputs-thef-public">Repository</a> · <a href="arb/reports.json">reports.json</a> · <a href="arb/README.md">arb/README.md</a></p>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      var root = document.documentElement, btn = document.getElementById('theme'), key = 'mo-theme';
+      function current() { var t = root.getAttribute('data-theme'); if (t) return t; return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+      function label() { btn.textContent = current() === 'dark' ? 'Light' : 'Dark'; }
+      var q = null; try { q = new URLSearchParams(location.search).get('theme'); } catch (e) {}
+      var saved = null; try { saved = localStorage.getItem(key); } catch (e) {}
+      var start = q === 'dark' || q === 'light' ? q : saved;
+      if (start === 'dark' || start === 'light') root.setAttribute('data-theme', start);
+      label();
+      btn.addEventListener('click', function () {
+        var next = current() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem(key, next); } catch (e) {}
+        label();
+      });
+    })();
+  </script>
+</body>
+</html>
