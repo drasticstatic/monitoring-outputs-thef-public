@@ -1,4 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="monitoring-outputs: the observers' dated reports">
+  <style>
+    /* Motion, only for readers who have not asked for less (the family banner's rule): the trace draws itself, the
+       dislocation's ring breathes. With prefers-reduced-motion: reduce, or a viewer without CSS, it is the still picture. */
+    @media (prefers-reduced-motion: no-preference) {
+      .trace { stroke-dasharray: 100; animation: draw 3s cubic-bezier(.4,0,.2,1) .3s both; }
+      .fill { animation: arrive 1.2s ease-out 2.2s both; }
+      .halo { transform-box: fill-box; transform-origin: center; animation: halo 3.2s ease-out 3.4s infinite; }
+    }
+    @keyframes draw { from { stroke-dashoffset: 100 } to { stroke-dashoffset: 0 } }
+    @keyframes arrive { from { opacity: 0 } to { opacity: 1 } }
+    @keyframes halo { 0% { opacity: .55; transform: scale(1) } 70%, 100% { opacity: 0; transform: scale(2.1) } }
+  </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#334155"/>
@@ -15,10 +27,10 @@
     <path d="M150 0V240M300 0V240M450 0V240M600 0V240M750 0V240M900 0V240M1050 0V240"/>
   </g>
   <!-- a heartbeat trace: quiet polls, one dislocation, the close -->
-  <path d="M720 166 L760 164 L800 167 L830 120 L850 196 L872 92 L896 176 L930 160 L990 163 L1050 158 L1110 161 L1170 156 L1170 240 L720 240 Z" fill="url(#fade)"/>
-  <path d="M720 166 L760 164 L800 167 L830 120 L850 196 L872 92 L896 176 L930 160 L990 163 L1050 158 L1110 161 L1170 156" fill="none" stroke="#d9a441" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path class="fill" d="M720 166 L760 164 L800 167 L830 120 L850 196 L872 92 L896 176 L930 160 L990 163 L1050 158 L1110 161 L1170 156 L1170 240 L720 240 Z" fill="url(#fade)"/>
+  <path class="trace" pathLength="100" d="M720 166 L760 164 L800 167 L830 120 L850 196 L872 92 L896 176 L930 160 L990 163 L1050 158 L1110 161 L1170 156" fill="none" stroke="#d9a441" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="872" cy="92" r="6" fill="#d9a441"/>
-  <circle cx="872" cy="92" r="14" fill="none" stroke="#d9a441" stroke-opacity=".45" stroke-width="2"/>
+  <circle class="halo" cx="872" cy="92" r="14" fill="none" stroke="#d9a441" stroke-opacity=".45" stroke-width="2"/>
   <text x="64" y="104" font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#d9a441" letter-spacing=".5">monitoring-outputs</text>
   <text x="66" y="146" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#e2e8f0">the observers' dated reports, one page a day</text>
   <text x="66" y="186" font-family="Menlo, Consolas, monospace" font-size="15" fill="#94a3b8">arb/ · perps/ · monitor-only · the lab for The Holy Earth Foundation</text>

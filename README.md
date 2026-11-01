@@ -14,7 +14,7 @@ prices and write down what they saw. Neither holds a wallet that trades, places 
 | Folder | What it is |
 |---|---|
 | [`arb/`](arb/README.md) | the arbitrage observer: a study of price gaps between decentralised exchanges on Arbitrum, one page per study day (`arb/YYYY-MM-DD/README.md`) |
-| [`perps/`](perps/README.md) | the Perps listener's pages, when its session publishes them |
+| [`perps/`](perps/README.md) | the Perps listener's **heartbeat page** (<https://drasticstatic.github.io/monitoring-outputs-thef-public/perps/>: is it awake, are its sources answering), and its dated pages when its session publishes them |
 | `pdf/` | each page rendered to PDF by this repository's workflow, a minute after the page lands |
 | `index.html` | the front end GitHub Pages serves: every dated report with its PDF |
 
