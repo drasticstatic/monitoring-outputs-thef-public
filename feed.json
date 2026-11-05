@@ -1,0 +1,231 @@
+{
+ "title": "The lab's observers (public, in costume)",
+ "mode": "monitor-only: no wallet, no orders, no proposals",
+ "updatedAt": "2026-11-04T05:05:59.265000+00:00",
+ "freshness": {
+  "state": "current",
+  "hoursSinceNewestPage": 23.9,
+  "staleAfterHours": 36
+ },
+ "totals": {
+  "days": 10,
+  "observedHours": 198.56,
+  "polls": 47390,
+  "candidates": 36210,
+  "clearedCosts": 2,
+  "wouldHaveFired": 0,
+  "chases": 1732
+ },
+ "lanes": {
+  "arbitrage": {
+   "latest": "2026-11-03",
+   "heartbeat": "Nov 3, 23:59 ET"
+  },
+  "perps": {
+   "state": "not started",
+   "note": "The Perps listener has not been started; its heartbeat appears here when it is."
+  }
+ },
+ "entries": [
+  {
+   "date": "2026-11-03",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "24.00 h observed, 5,725 polls, 4,827 candidates, 1 cleared costs, 0 would have fired; 257 chases; best +0.000016 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
+   "stats": {
+    "observedHours": 24,
+    "polls": 5725,
+    "candidates": 4827,
+    "cleared": 1,
+    "wouldFire": 0,
+    "chases": 257,
+    "studyObservedHours": 198.57,
+    "studyTargetHours": 168,
+    "lastPoll": "Nov 3, 23:59 ET",
+    "block": 521079990
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-03/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-11-03.pdf"
+  },
+  {
+   "date": "2026-11-02",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "24.01 h observed, 5,760 polls, 5,404 candidates, 0 cleared costs, 0 would have fired; 274 chases; best -0.000004 ETH on curious-oblique-egret Rowan Quay→Juniper at 0.01 ETH.",
+   "stats": {
+    "observedHours": 24.01,
+    "polls": 5760,
+    "candidates": 5404,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 274,
+    "studyObservedHours": 174.58,
+    "studyTargetHours": 168,
+    "lastPoll": "Nov 2, 23:59 ET",
+    "block": 520778250
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-02/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-11-02.pdf"
+  },
+  {
+   "date": "2026-11-01",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "22.48 h observed, 5,396 polls, 4,180 candidates, 1 cleared costs, 0 would have fired; 207 chases; best +0.000000 ETH on curious-umbral-gecko Juniper→Opal Hill at 0.05 ETH.",
+   "stats": {
+    "observedHours": 22.48,
+    "polls": 5396,
+    "candidates": 4180,
+    "cleared": 1,
+    "wouldFire": 0,
+    "chases": 207,
+    "studyObservedHours": 150.56,
+    "studyTargetHours": 168,
+    "lastPoll": "Nov 1, 23:59 ET",
+    "block": 520473985
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-01/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-11-01.pdf"
+  },
+  {
+   "date": "2026-10-31",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "24.00 h observed, 5,744 polls, 4,232 candidates, 0 cleared costs, 0 would have fired; 190 chases; best -0.000007 ETH on lucky-glacial-urchin Rowan Cross→Juniper at 0.01 ETH.",
+   "stats": {
+    "observedHours": 24,
+    "polls": 5744,
+    "candidates": 4232,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 190,
+    "studyObservedHours": 128.08,
+    "studyTargetHours": 168,
+    "lastPoll": "Oct 31, 23:59 ET",
+    "block": 520175267
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-10-31/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-10-31.pdf"
+  },
+  {
+   "date": "2026-10-30",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "18.06 h observed, 4,324 polls, 3,715 candidates, 0 cleared costs, 0 would have fired; 197 chases; best -0.000005 ETH on curious-oblique-egret Juniper→Rowan Quay at 0.01 ETH.",
+   "stats": {
+    "observedHours": 18.06,
+    "polls": 4324,
+    "candidates": 3715,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 197,
+    "studyObservedHours": 104.08,
+    "studyTargetHours": 168,
+    "lastPoll": "Oct 30, 23:59 ET",
+    "block": 519880934
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-10-30/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-10-30.pdf"
+  },
+  {
+   "date": "2026-10-29",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "7.60 h observed, 1,818 polls, 1,362 candidates, 0 cleared costs, 0 would have fired; 65 chases; best -0.000006 ETH on lucky-glacial-urchin Rowan Cross→Juniper at 0.01 ETH.",
+   "stats": {
+    "observedHours": 7.6,
+    "polls": 1818,
+    "candidates": 1362,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 65,
+    "studyObservedHours": 86.01,
+    "studyTargetHours": 168,
+    "lastPoll": "Oct 29, 07:35 ET",
+    "block": 519344442
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-10-29/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-10-29.pdf"
+  },
+  {
+   "date": "2026-10-28",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "24.00 h observed, 5,698 polls, 4,470 candidates, 0 cleared costs, 0 would have fired; 230 chases; best -0.000005 ETH on lucky-glacial-urchin Juniper→Rowan Cross at 0.01 ETH.",
+   "stats": {
+    "observedHours": 24,
+    "polls": 5698,
+    "candidates": 4470,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 230,
+    "studyObservedHours": 78.41,
+    "studyTargetHours": 168,
+    "lastPoll": "Oct 28, 23:59 ET",
+    "block": 519252907
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-10-28/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-10-28.pdf"
+  },
+  {
+   "date": "2026-10-27",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "24.01 h observed, 5,740 polls, 4,299 candidates, 0 cleared costs, 0 would have fired; 215 chases; best -0.000006 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
+   "stats": {
+    "observedHours": 24.01,
+    "polls": 5740,
+    "candidates": 4299,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 215,
+    "studyObservedHours": 54.41,
+    "studyTargetHours": 168,
+    "lastPoll": "Oct 27, 23:59 ET",
+    "block": 518940116
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-10-27/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-10-27.pdf"
+  },
+  {
+   "date": "2026-10-26",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "24.16 h observed, 5,704 polls, 3,289 candidates, 0 cleared costs, 0 would have fired; 97 chases; best -0.000007 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
+   "stats": {
+    "observedHours": 24.16,
+    "polls": 5704,
+    "candidates": 3289,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 97,
+    "studyObservedHours": 30.4,
+    "studyTargetHours": 168,
+    "lastPoll": "Oct 26, 23:59 ET",
+    "block": 518634582
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-10-26/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-10-26.pdf"
+  },
+  {
+   "date": "2026-10-25",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "6.24 h observed, 1,481 polls, 432 candidates, 0 cleared costs, 0 would have fired; 0 chases; best -0.000008 ETH on curious-umbral-gecko Juniper→Rowan Quay at 0.05 ETH.",
+   "stats": {
+    "observedHours": 6.24,
+    "polls": 1481,
+    "candidates": 432,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 0,
+    "studyObservedHours": 6.24,
+    "studyTargetHours": 168,
+    "lastPoll": "Oct 25, 23:59 ET",
+    "block": 518332250
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-10-25/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-10-25.pdf"
+  }
+ ]
+}
