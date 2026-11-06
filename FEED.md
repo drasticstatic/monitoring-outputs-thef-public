@@ -6,22 +6,24 @@
 
 | Lane | State | Last heard |
 |---|---|---|
-| Arbitrage (DEX edge study) | current: page for 2026-11-03 | Nov 3, 23:59 ET |
+| Arbitrage (DEX edge study) | current: page for 2026-11-05 | Nov 5, 23:59 ET |
 | Perps listener | not started | not started |
 
-**So far:** 10 full days, 198.6 hours observed, 47,390 polls, 36,210 candidates, 2 cleared costs, **0 would have fired**, 1,732 chases.
+**So far:** 12 full days, 246.6 hours observed, 58,908 polls, 45,826 candidates, 8 cleared costs, **2 would have fired**, 2,240 chases.
 
 ## Following along
 
 - **A phone:** the free ntfy app, topic `fortunatrades-arb-live` (public, in costume). Perps and the FortunaVision terminal get their own topics when they go live.
-- **A feed reader:** https://drasticstatic.github.io/monitoring-outputs-thef-public/feed.xml (public, in costume).
+- **A feed reader:** https://drasticstatic.github.io/monitoring-outputs-thef-public/rss.xml (RSS) or https://drasticstatic.github.io/monitoring-outputs-thef-public/feed.xml (Atom), public, in costume.
 - **A web page:** https://drasticstatic.github.io/monitoring-outputs-thef-public/
 
 ## Day by day
 
 | Date | The day in one line | Page | PDF |
 |---|---|---|---|
-| 2026-11-03 | 24.00 h observed, 5,725 polls, 4,827 candidates, 1 cleared costs, 0 would have fired; 257 chases; best +0.000016 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH. | [page](arb/2026-11-03/README.md) | [PDF](pdf/arb/2026-11-03.pdf) |
+| 2026-11-05 | 24.00 h observed, 5,740 polls, 4,857 candidates, 3 cleared costs, 0 would have fired; 247 chases; best +0.000023 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.05 ETH. | [page](arb/2026-11-05/README.md) | [PDF](pdf/arb/2026-11-05.pdf) |
+| 2026-11-04 | 24.00 h observed, 5,758 polls, 4,740 candidates, 3 cleared costs, 2 would have fired; 261 chases; best +0.000305 ETH on brisk-umbral-bison Rowan Cross→Opal Cross at 0.5 ETH. | [page](arb/2026-11-04/README.md) | [PDF](pdf/arb/2026-11-04.pdf) |
+| 2026-11-03 | 24.00 h observed, 5,745 polls, 4,846 candidates, 1 cleared costs, 0 would have fired; 257 chases; best +0.000016 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH. | [page](arb/2026-11-03/README.md) | [PDF](pdf/arb/2026-11-03.pdf) |
 | 2026-11-02 | 24.01 h observed, 5,760 polls, 5,404 candidates, 0 cleared costs, 0 would have fired; 274 chases; best -0.000004 ETH on curious-oblique-egret Rowan Quay→Juniper at 0.01 ETH. | [page](arb/2026-11-02/README.md) | [PDF](pdf/arb/2026-11-02.pdf) |
 | 2026-11-01 | 22.48 h observed, 5,396 polls, 4,180 candidates, 1 cleared costs, 0 would have fired; 207 chases; best +0.000000 ETH on curious-umbral-gecko Juniper→Opal Hill at 0.05 ETH. | [page](arb/2026-11-01/README.md) | [PDF](pdf/arb/2026-11-01.pdf) |
 | 2026-10-31 | 24.00 h observed, 5,744 polls, 4,232 candidates, 0 cleared costs, 0 would have fired; 190 chases; best -0.000007 ETH on lucky-glacial-urchin Rowan Cross→Juniper at 0.01 ETH. | [page](arb/2026-10-31/README.md) | [PDF](pdf/arb/2026-10-31.pdf) |

@@ -3,14 +3,28 @@
   <title>The lab&#x27;s observers (public, in costume)</title>
   <id>https://drasticstatic.github.io/monitoring-outputs-thef-public/feed.xml</id>
   <link rel="self" href="https://drasticstatic.github.io/monitoring-outputs-thef-public/feed.xml"/>
-  <updated>2026-11-04T05:05:59.265000+00:00</updated>
+  <updated>2026-11-06T05:06:35.789000+00:00</updated>
   <author><name>The lab's observers</name></author>
+  <entry>
+    <title>Arbitrage, 2026-11-05</title>
+    <id>https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-05/README.md</id>
+    <link href="https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-05/README.md"/>
+    <updated>2026-11-06T05:06:35.789000+00:00</updated>
+    <summary>24.00 h observed, 5,740 polls, 4,857 candidates, 3 cleared costs, 0 would have fired; 247 chases; best +0.000023 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.05 ETH.</summary>
+  </entry>
+  <entry>
+    <title>Arbitrage, 2026-11-04</title>
+    <id>https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-04/README.md</id>
+    <link href="https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-04/README.md"/>
+    <updated>2026-11-06T05:06:35.582000+00:00</updated>
+    <summary>24.00 h observed, 5,758 polls, 4,740 candidates, 3 cleared costs, 2 would have fired; 261 chases; best +0.000305 ETH on brisk-umbral-bison Rowan Cross→Opal Cross at 0.5 ETH.</summary>
+  </entry>
   <entry>
     <title>Arbitrage, 2026-11-03</title>
     <id>https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-03/README.md</id>
     <link href="https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-03/README.md"/>
-    <updated>2026-11-04T05:05:59.265000+00:00</updated>
-    <summary>24.00 h observed, 5,725 polls, 4,827 candidates, 1 cleared costs, 0 would have fired; 257 chases; best +0.000016 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.</summary>
+    <updated>2026-11-05T05:06:12.808000+00:00</updated>
+    <summary>24.00 h observed, 5,745 polls, 4,846 candidates, 1 cleared costs, 0 would have fired; 257 chases; best +0.000016 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.</summary>
   </entry>
   <entry>
     <title>Arbitrage, 2026-11-02</title>

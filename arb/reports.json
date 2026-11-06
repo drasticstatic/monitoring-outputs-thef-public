@@ -2,16 +2,58 @@
   "lane": "arbitrage",
   "reports": [
     {
+      "date": "2026-11-05",
+      "partial": false,
+      "generatedAt": "2026-11-06T05:06:35.789Z",
+      "line": "24.00 h observed, 5,740 polls, 4,857 candidates, 3 cleared costs, 0 would have fired; 247 chases; best +0.000023 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.05 ETH.",
+      "page": "arb/2026-11-05/README.md",
+      "pdf": "pdf/arb/2026-11-05.pdf",
+      "stats": {
+        "observedHours": 24,
+        "polls": 5740,
+        "candidates": 4857,
+        "cleared": 3,
+        "wouldFire": 0,
+        "chases": 247,
+        "studyObservedHours": 246.58,
+        "studyTargetHours": 168,
+        "lastPoll": "Nov 5, 23:59 ET",
+        "block": 521692743
+      },
+      "bytes": 8973
+    },
+    {
+      "date": "2026-11-04",
+      "partial": false,
+      "generatedAt": "2026-11-06T05:06:35.582Z",
+      "line": "24.00 h observed, 5,758 polls, 4,740 candidates, 3 cleared costs, 2 would have fired; 261 chases; best +0.000305 ETH on brisk-umbral-bison Rowan Cross→Opal Cross at 0.5 ETH.",
+      "page": "arb/2026-11-04/README.md",
+      "pdf": "pdf/arb/2026-11-04.pdf",
+      "stats": {
+        "observedHours": 24,
+        "polls": 5758,
+        "candidates": 4740,
+        "cleared": 3,
+        "wouldFire": 2,
+        "chases": 261,
+        "studyObservedHours": 222.57,
+        "studyTargetHours": 168,
+        "lastPoll": "Nov 4, 23:59 ET",
+        "block": 521382305
+      },
+      "bytes": 8984
+    },
+    {
       "date": "2026-11-03",
       "partial": false,
-      "generatedAt": "2026-11-04T05:05:59.265Z",
-      "line": "24.00 h observed, 5,725 polls, 4,827 candidates, 1 cleared costs, 0 would have fired; 257 chases; best +0.000016 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
+      "generatedAt": "2026-11-05T05:06:12.808Z",
+      "line": "24.00 h observed, 5,745 polls, 4,846 candidates, 1 cleared costs, 0 would have fired; 257 chases; best +0.000016 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
       "page": "arb/2026-11-03/README.md",
       "pdf": "pdf/arb/2026-11-03.pdf",
       "stats": {
         "observedHours": 24,
-        "polls": 5725,
-        "candidates": 4827,
+        "polls": 5745,
+        "candidates": 4846,
         "cleared": 1,
         "wouldFire": 0,
         "chases": 257,
@@ -212,5 +254,5 @@
       "bytes": 4357
     }
   ],
-  "updatedAt": "2026-11-04T05:05:59.270Z"
+  "updatedAt": "2026-11-06T05:06:35.794Z"
 }
