@@ -93,6 +93,7 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html _site/
+          for f in feed.xml rss.xml feed.json; do [ -f "$f" ] && cp "$f" _site/; done
           cp -R assets arb perps _site/
           [ -d pdf ] && cp -R pdf _site/ || true
           touch _site/.nojekyll
