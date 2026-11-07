@@ -5,13 +5,20 @@
     <link>https://drasticstatic.github.io/monitoring-outputs-thef-public/</link>
     <atom:link href="https://drasticstatic.github.io/monitoring-outputs-thef-public/rss.xml" rel="self" type="application/rss+xml"/>
     <description>What the lab's monitor-only observers saw, one line a day. No wallet, no orders, no proposals.</description>
-    <lastBuildDate>Fri, 06 Nov 2026 05:06:35 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 05:03:31 +0000</lastBuildDate>
+    <item>
+      <title>Arbitrage, 2026-11-06</title>
+      <link>https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-06/README.md</link>
+      <guid isPermaLink="true">https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-06/README.md</guid>
+      <pubDate>Sat, 07 Nov 2026 05:03:31 +0000</pubDate>
+      <description>24.00 h observed, 5,730 polls, 4,445 candidates, 0 cleared costs, 0 would have fired; 239 chases; best -0.000006 ETH on plucky-hollow-walrus Rowan Quay→Juniper at 0.05 ETH.</description>
+    </item>
     <item>
       <title>Arbitrage, 2026-11-05</title>
       <link>https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-05/README.md</link>
       <guid isPermaLink="true">https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-05/README.md</guid>
-      <pubDate>Fri, 06 Nov 2026 05:06:35 +0000</pubDate>
-      <description>24.00 h observed, 5,740 polls, 4,857 candidates, 3 cleared costs, 0 would have fired; 247 chases; best +0.000023 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.05 ETH.</description>
+      <pubDate>Sat, 07 Nov 2026 05:03:31 +0000</pubDate>
+      <description>24.00 h observed, 5,759 polls, 4,872 candidates, 3 cleared costs, 0 would have fired; 247 chases; best +0.000023 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.05 ETH.</description>
     </item>
     <item>
       <title>Arbitrage, 2026-11-04</title>
