@@ -1,25 +1,25 @@
 {
  "title": "The lab's observers (public, in costume)",
  "mode": "monitor-only: no wallet, no orders, no proposals",
- "updatedAt": "2026-11-07T05:03:31.997000+00:00",
+ "updatedAt": "2026-11-08T05:03:32.075000+00:00",
  "freshness": {
   "state": "current",
   "hoursSinceNewestPage": 0.0,
   "staleAfterHours": 36
  },
  "totals": {
-  "days": 13,
-  "observedHours": 270.56,
-  "polls": 64657,
-  "candidates": 50286,
+  "days": 14,
+  "observedHours": 294.56,
+  "polls": 70415,
+  "candidates": 54325,
   "clearedCosts": 8,
   "wouldHaveFired": 2,
-  "chases": 2479
+  "chases": 2667
  },
  "lanes": {
   "arbitrage": {
-   "latest": "2026-11-06",
-   "heartbeat": "Nov 6, 23:59 ET"
+   "latest": "2026-11-07",
+   "heartbeat": "Nov 7, 23:59 ET"
   },
   "perps": {
    "state": "not started",
@@ -28,14 +28,34 @@
  },
  "entries": [
   {
+   "date": "2026-11-07",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "24.00 h observed, 5,739 polls, 4,031 candidates, 0 cleared costs, 0 would have fired; 188 chases; best -0.000006 ETH on curious-umbral-gecko Rowan Quay→Juniper at 0.05 ETH.",
+   "stats": {
+    "observedHours": 24,
+    "polls": 5739,
+    "candidates": 4031,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 188,
+    "studyObservedHours": 294.58,
+    "studyTargetHours": 168,
+    "lastPoll": "Nov 7, 23:59 ET",
+    "block": 522283100
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-07/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-11-07.pdf"
+  },
+  {
    "date": "2026-11-06",
    "lane": "arbitrage",
    "partial": false,
-   "line": "24.00 h observed, 5,730 polls, 4,445 candidates, 0 cleared costs, 0 would have fired; 239 chases; best -0.000006 ETH on plucky-hollow-walrus Rowan Quay→Juniper at 0.05 ETH.",
+   "line": "24.00 h observed, 5,749 polls, 4,453 candidates, 0 cleared costs, 0 would have fired; 239 chases; best -0.000006 ETH on plucky-hollow-walrus Rowan Quay→Juniper at 0.05 ETH.",
    "stats": {
     "observedHours": 24,
-    "polls": 5730,
-    "candidates": 4445,
+    "polls": 5749,
+    "candidates": 4453,
     "cleared": 0,
     "wouldFire": 0,
     "chases": 239,
