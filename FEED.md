@@ -6,10 +6,10 @@
 
 | Lane | State | Last heard |
 |---|---|---|
-| Arbitrage (DEX edge study) | current: page for 2026-11-08 | Nov 8, 23:59 ET |
+| Arbitrage (DEX edge study) | current: page for 2026-11-09 | Nov 9, 23:59 ET |
 | Perps listener | not started | not started |
 
-**So far:** 15 full days, 318.6 hours observed, 76,175 polls, 58,776 candidates, 8 cleared costs, **2 would have fired**, 2,867 chases.
+**So far:** 16 full days, 342.7 hours observed, 81,932 polls, 63,440 candidates, 10 cleared costs, **2 would have fired**, 3,105 chases.
 
 ## Following along
 
@@ -21,7 +21,8 @@
 
 | Date | The day in one line | Page | PDF |
 |---|---|---|---|
-| 2026-11-08 | 24.00 h observed, 5,740 polls, 4,443 candidates, 0 cleared costs, 0 would have fired; 200 chases; best -0.000006 ETH on lucky-glacial-urchin Juniper→Rowan Cross at 0.01 ETH. | [page](arb/2026-11-08/README.md) | [PDF](pdf/arb/2026-11-08.pdf) |
+| 2026-11-09 | 24.13 h observed, 5,738 polls, 4,648 candidates, 2 cleared costs, 0 would have fired; 238 chases; best +0.000072 ETH on curious-umbral-gecko Juniper→Rowan Quay at 0.05 ETH. | [page](arb/2026-11-09/README.md) | [PDF](pdf/arb/2026-11-09.pdf) |
+| 2026-11-08 | 24.00 h observed, 5,759 polls, 4,459 candidates, 0 cleared costs, 0 would have fired; 200 chases; best -0.000006 ETH on lucky-glacial-urchin Juniper→Rowan Cross at 0.01 ETH. | [page](arb/2026-11-08/README.md) | [PDF](pdf/arb/2026-11-08.pdf) |
 | 2026-11-07 | 24.00 h observed, 5,759 polls, 4,039 candidates, 0 cleared costs, 0 would have fired; 188 chases; best -0.000006 ETH on curious-umbral-gecko Rowan Quay→Juniper at 0.05 ETH. | [page](arb/2026-11-07/README.md) | [PDF](pdf/arb/2026-11-07.pdf) |
 | 2026-11-06 | 24.00 h observed, 5,749 polls, 4,453 candidates, 0 cleared costs, 0 would have fired; 239 chases; best -0.000006 ETH on plucky-hollow-walrus Rowan Quay→Juniper at 0.05 ETH. | [page](arb/2026-11-06/README.md) | [PDF](pdf/arb/2026-11-06.pdf) |
 | 2026-11-05 | 24.00 h observed, 5,759 polls, 4,872 candidates, 3 cleared costs, 0 would have fired; 247 chases; best +0.000023 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.05 ETH. | [page](arb/2026-11-05/README.md) | [PDF](pdf/arb/2026-11-05.pdf) |
