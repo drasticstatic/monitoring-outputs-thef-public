@@ -1,25 +1,25 @@
 {
  "title": "The lab's observers (public, in costume)",
  "mode": "monitor-only: no wallet, no orders, no proposals",
- "updatedAt": "2026-11-10T06:15:06.040000+00:00",
+ "updatedAt": "2026-11-11T06:05:09.191000+00:00",
  "freshness": {
   "state": "current",
-  "hoursSinceNewestPage": 23.0,
+  "hoursSinceNewestPage": 23.1,
   "staleAfterHours": 36
  },
  "totals": {
-  "days": 16,
-  "observedHours": 342.69,
-  "polls": 81932,
-  "candidates": 63440,
+  "days": 17,
+  "observedHours": 367.11,
+  "polls": 87648,
+  "candidates": 68105,
   "clearedCosts": 10,
   "wouldHaveFired": 2,
-  "chases": 3105
+  "chases": 3350
  },
  "lanes": {
   "arbitrage": {
-   "latest": "2026-11-09",
-   "heartbeat": "Nov 9, 23:59 ET"
+   "latest": "2026-11-10",
+   "heartbeat": "Nov 10, 23:59 ET"
   },
   "perps": {
    "state": "not started",
@@ -28,14 +28,34 @@
  },
  "entries": [
   {
+   "date": "2026-11-10",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "24.42 h observed, 5,696 polls, 4,651 candidates, 0 cleared costs, 0 would have fired; 245 chases; best -0.000005 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
+   "stats": {
+    "observedHours": 24.42,
+    "polls": 5696,
+    "candidates": 4651,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 245,
+    "studyObservedHours": 367.12,
+    "studyTargetHours": 168,
+    "lastPoll": "Nov 10, 23:59 ET",
+    "block": 523187836
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-10/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-11-10.pdf"
+  },
+  {
    "date": "2026-11-09",
    "lane": "arbitrage",
    "partial": false,
-   "line": "24.13 h observed, 5,738 polls, 4,648 candidates, 2 cleared costs, 0 would have fired; 238 chases; best +0.000072 ETH on curious-umbral-gecko Juniper→Rowan Quay at 0.05 ETH.",
+   "line": "24.13 h observed, 5,758 polls, 4,662 candidates, 2 cleared costs, 0 would have fired; 238 chases; best +0.000072 ETH on curious-umbral-gecko Juniper→Rowan Quay at 0.05 ETH.",
    "stats": {
     "observedHours": 24.13,
-    "polls": 5738,
-    "candidates": 4648,
+    "polls": 5758,
+    "candidates": 4662,
     "cleared": 2,
     "wouldFire": 0,
     "chases": 238,
