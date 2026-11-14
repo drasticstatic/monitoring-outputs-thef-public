@@ -4,7 +4,8 @@ One page per study day, written nightly by the arbitrage observer in costume (pa
 
 | Date | The day in one line | Page | PDF |
 |---|---|---|---|
-| 2026-11-11 | 24.43 h observed, 4,252 polls, 3,754 candidates, 0 cleared costs, 0 would have fired; 234 chases; best -0.000006 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH. | [README](2026-11-11/README.md) | [PDF](../pdf/arb/2026-11-11.pdf) |
+| 2026-11-12 | 24.68 h observed, 3,959 polls, 3,717 candidates, 1 cleared costs, 1 would have fired; 241 chases; best +0.000002 ETH on curious-oblique-egret Rowan Gate→Opal Cross at 0.01 ETH. | [README](2026-11-12/README.md) | [PDF](../pdf/arb/2026-11-12.pdf) |
+| 2026-11-11 | 24.43 h observed, 4,261 polls, 3,762 candidates, 0 cleared costs, 0 would have fired; 234 chases; best -0.000006 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH. | [README](2026-11-11/README.md) | [PDF](../pdf/arb/2026-11-11.pdf) |
 | 2026-11-10 | 24.42 h observed, 5,716 polls, 4,662 candidates, 0 cleared costs, 0 would have fired; 245 chases; best -0.000005 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH. | [README](2026-11-10/README.md) | [PDF](../pdf/arb/2026-11-10.pdf) |
 | 2026-11-09 | 24.13 h observed, 5,758 polls, 4,662 candidates, 2 cleared costs, 0 would have fired; 238 chases; best +0.000072 ETH on curious-umbral-gecko Juniper→Rowan Quay at 0.05 ETH. | [README](2026-11-09/README.md) | [PDF](../pdf/arb/2026-11-09.pdf) |
 | 2026-11-08 | 24.00 h observed, 5,759 polls, 4,459 candidates, 0 cleared costs, 0 would have fired; 200 chases; best -0.000006 ETH on lucky-glacial-urchin Juniper→Rowan Cross at 0.01 ETH. | [README](2026-11-08/README.md) | [PDF](../pdf/arb/2026-11-08.pdf) |
@@ -23,4 +24,4 @@ One page per study day, written nightly by the arbitrage observer in costume (pa
 | 2026-10-26 | 24.16 h observed, 5,704 polls, 3,289 candidates, 0 cleared costs, 0 would have fired; 97 chases; best -0.000007 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH. | [README](2026-10-26/README.md) | [PDF](../pdf/arb/2026-10-26.pdf) |
 | 2026-10-25 | 6.24 h observed, 1,481 polls, 432 candidates, 0 cleared costs, 0 would have fired; 0 chases; best -0.000008 ETH on curious-umbral-gecko Juniper→Rowan Quay at 0.05 ETH. | [README](2026-10-25/README.md) | [PDF](../pdf/arb/2026-10-25.pdf) |
 
-<sub>Index rewritten Nov 12, 01:13 ET. Machine-readable: [`reports.json`](reports.json).</sub>
+<sub>Index rewritten Nov 13, 01:07 ET. Machine-readable: [`reports.json`](reports.json).</sub>
