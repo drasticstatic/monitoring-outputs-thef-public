@@ -1,25 +1,25 @@
 {
  "title": "The lab's observers (public, in costume)",
  "mode": "monitor-only: no wallet, no orders, no proposals",
- "updatedAt": "2026-11-13T06:07:27.752000+00:00",
+ "updatedAt": "2026-11-14T06:05:19.591000+00:00",
  "freshness": {
   "state": "current",
   "hoursSinceNewestPage": 23.1,
   "staleAfterHours": 36
  },
  "totals": {
-  "days": 19,
-  "observedHours": 416.22,
-  "polls": 95888,
-  "candidates": 75595,
-  "clearedCosts": 11,
+  "days": 20,
+  "observedHours": 441.77,
+  "polls": 101598,
+  "candidates": 80643,
+  "clearedCosts": 12,
   "wouldHaveFired": 3,
-  "chases": 3825
+  "chases": 4093
  },
  "lanes": {
   "arbitrage": {
-   "latest": "2026-11-12",
-   "heartbeat": "Nov 12, 23:59 ET"
+   "latest": "2026-11-13",
+   "heartbeat": "Nov 13, 23:59 ET"
   },
   "perps": {
    "state": "not started",
@@ -28,14 +28,34 @@
  },
  "entries": [
   {
+   "date": "2026-11-13",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "25.55 h observed, 5,690 polls, 5,032 candidates, 1 cleared costs, 0 would have fired; 268 chases; best +0.000003 ETH on plucky-hollow-walrus Rowan Quay→Juniper at 0.05 ETH.",
+   "stats": {
+    "observedHours": 25.55,
+    "polls": 5690,
+    "candidates": 5032,
+    "cleared": 1,
+    "wouldFire": 0,
+    "chases": 268,
+    "studyObservedHours": 441.77,
+    "studyTargetHours": 168,
+    "lastPoll": "Nov 13, 23:59 ET",
+    "block": 524066872
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-13/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-11-13.pdf"
+  },
+  {
    "date": "2026-11-12",
    "lane": "arbitrage",
    "partial": false,
-   "line": "24.68 h observed, 3,959 polls, 3,717 candidates, 1 cleared costs, 1 would have fired; 241 chases; best +0.000002 ETH on curious-oblique-egret Rowan Gate→Opal Cross at 0.01 ETH.",
+   "line": "24.68 h observed, 3,979 polls, 3,733 candidates, 1 cleared costs, 1 would have fired; 241 chases; best +0.000002 ETH on curious-oblique-egret Rowan Gate→Opal Cross at 0.01 ETH.",
    "stats": {
     "observedHours": 24.68,
-    "polls": 3959,
-    "candidates": 3717,
+    "polls": 3979,
+    "candidates": 3733,
     "cleared": 1,
     "wouldFire": 1,
     "chases": 241,
