@@ -6,10 +6,10 @@
 
 | Lane | State | Last heard |
 |---|---|---|
-| Arbitrage (DEX edge study) | current: page for 2026-11-15 | Nov 15, 23:59 ET |
+| Arbitrage (DEX edge study) | current: page for 2026-11-16 | Nov 16, 23:59 ET |
 | Perps listener | not started | not started |
 
-**So far:** 22 full days, 490.6 hours observed, 113,112 polls, 91,582 candidates, 12 cleared costs, **3 would have fired**, 4,663 chases.
+**So far:** 23 full days, 515.0 hours observed, 118,866 polls, 96,895 candidates, 12 cleared costs, **3 would have fired**, 4,949 chases.
 
 ## Following along
 
@@ -21,7 +21,8 @@
 
 | Date | The day in one line | Page | PDF |
 |---|---|---|---|
-| 2026-11-15 | 24.40 h observed, 5,737 polls, 5,297 candidates, 0 cleared costs, 0 would have fired; 285 chases; best -0.000006 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.01 ETH. | [page](arb/2026-11-15/README.md) | [PDF](pdf/arb/2026-11-15.pdf) |
+| 2026-11-16 | 24.39 h observed, 5,735 polls, 5,294 candidates, 0 cleared costs, 0 would have fired; 286 chases; best -0.000007 ETH on curious-oblique-egret Rowan Quay→Rowan Cross at 0.01 ETH. | [page](arb/2026-11-16/README.md) | [PDF](pdf/arb/2026-11-16.pdf) |
+| 2026-11-15 | 24.40 h observed, 5,756 polls, 5,316 candidates, 0 cleared costs, 0 would have fired; 285 chases; best -0.000006 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.01 ETH. | [page](arb/2026-11-15/README.md) | [PDF](pdf/arb/2026-11-15.pdf) |
 | 2026-11-14 | 24.41 h observed, 5,757 polls, 5,622 candidates, 0 cleared costs, 0 would have fired; 285 chases; best -0.000004 ETH on curious-umbral-gecko Juniper→Rowan Quay at 0.01 ETH. | [page](arb/2026-11-14/README.md) | [PDF](pdf/arb/2026-11-14.pdf) |
 | 2026-11-13 | 25.55 h observed, 5,710 polls, 5,052 candidates, 1 cleared costs, 0 would have fired; 268 chases; best +0.000003 ETH on plucky-hollow-walrus Rowan Quay→Juniper at 0.05 ETH. | [page](arb/2026-11-13/README.md) | [PDF](pdf/arb/2026-11-13.pdf) |
 | 2026-11-12 | 24.68 h observed, 3,979 polls, 3,733 candidates, 1 cleared costs, 1 would have fired; 241 chases; best +0.000002 ETH on curious-oblique-egret Rowan Gate→Opal Cross at 0.01 ETH. | [page](arb/2026-11-12/README.md) | [PDF](pdf/arb/2026-11-12.pdf) |

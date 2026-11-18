@@ -1,25 +1,25 @@
 {
  "title": "The lab's observers (public, in costume)",
  "mode": "monitor-only: no wallet, no orders, no proposals",
- "updatedAt": "2026-11-16T06:00:32.230000+00:00",
+ "updatedAt": "2026-11-17T06:01:40.598000+00:00",
  "freshness": {
   "state": "current",
   "hoursSinceNewestPage": 23.2,
   "staleAfterHours": 36
  },
  "totals": {
-  "days": 22,
-  "observedHours": 490.58,
-  "polls": 113112,
-  "candidates": 91582,
+  "days": 23,
+  "observedHours": 514.97,
+  "polls": 118866,
+  "candidates": 96895,
   "clearedCosts": 12,
   "wouldHaveFired": 3,
-  "chases": 4663
+  "chases": 4949
  },
  "lanes": {
   "arbitrage": {
-   "latest": "2026-11-15",
-   "heartbeat": "Nov 15, 23:59 ET"
+   "latest": "2026-11-16",
+   "heartbeat": "Nov 16, 23:59 ET"
   },
   "perps": {
    "state": "not started",
@@ -28,14 +28,34 @@
  },
  "entries": [
   {
+   "date": "2026-11-16",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "24.39 h observed, 5,735 polls, 5,294 candidates, 0 cleared costs, 0 would have fired; 286 chases; best -0.000007 ETH on curious-oblique-egret Rowan Quay→Rowan Cross at 0.01 ETH.",
+   "stats": {
+    "observedHours": 24.39,
+    "polls": 5735,
+    "candidates": 5294,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 286,
+    "studyObservedHours": 514.97,
+    "studyTargetHours": 168,
+    "lastPoll": "Nov 16, 23:59 ET",
+    "block": 524945654
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-16/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-11-16.pdf"
+  },
+  {
    "date": "2026-11-15",
    "lane": "arbitrage",
    "partial": false,
-   "line": "24.40 h observed, 5,737 polls, 5,297 candidates, 0 cleared costs, 0 would have fired; 285 chases; best -0.000006 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.01 ETH.",
+   "line": "24.40 h observed, 5,756 polls, 5,316 candidates, 0 cleared costs, 0 would have fired; 285 chases; best -0.000006 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.01 ETH.",
    "stats": {
     "observedHours": 24.4,
-    "polls": 5737,
-    "candidates": 5297,
+    "polls": 5756,
+    "candidates": 5316,
     "cleared": 0,
     "wouldFire": 0,
     "chases": 285,

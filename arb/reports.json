@@ -2,16 +2,37 @@
   "lane": "arbitrage",
   "reports": [
     {
+      "date": "2026-11-16",
+      "partial": false,
+      "generatedAt": "2026-11-17T06:01:40.598Z",
+      "line": "24.39 h observed, 5,735 polls, 5,294 candidates, 0 cleared costs, 0 would have fired; 286 chases; best -0.000007 ETH on curious-oblique-egret Rowan Quay→Rowan Cross at 0.01 ETH.",
+      "page": "arb/2026-11-16/README.md",
+      "pdf": "pdf/arb/2026-11-16.pdf",
+      "stats": {
+        "observedHours": 24.39,
+        "polls": 5735,
+        "candidates": 5294,
+        "cleared": 0,
+        "wouldFire": 0,
+        "chases": 286,
+        "studyObservedHours": 514.97,
+        "studyTargetHours": 168,
+        "lastPoll": "Nov 16, 23:59 ET",
+        "block": 524945654
+      },
+      "bytes": 8807
+    },
+    {
       "date": "2026-11-15",
       "partial": false,
-      "generatedAt": "2026-11-16T06:00:32.230Z",
-      "line": "24.40 h observed, 5,737 polls, 5,297 candidates, 0 cleared costs, 0 would have fired; 285 chases; best -0.000006 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.01 ETH.",
+      "generatedAt": "2026-11-17T06:01:40.243Z",
+      "line": "24.40 h observed, 5,756 polls, 5,316 candidates, 0 cleared costs, 0 would have fired; 285 chases; best -0.000006 ETH on curious-umbral-gecko Opal Quay→Juniper at 0.01 ETH.",
       "page": "arb/2026-11-15/README.md",
       "pdf": "pdf/arb/2026-11-15.pdf",
       "stats": {
         "observedHours": 24.4,
-        "polls": 5737,
-        "candidates": 5297,
+        "polls": 5756,
+        "candidates": 5316,
         "cleared": 0,
         "wouldFire": 0,
         "chases": 285,
@@ -464,5 +485,5 @@
       "bytes": 4357
     }
   ],
-  "updatedAt": "2026-11-16T06:00:32.234Z"
+  "updatedAt": "2026-11-17T06:01:40.604Z"
 }
