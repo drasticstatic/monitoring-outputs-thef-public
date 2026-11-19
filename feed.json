@@ -1,25 +1,25 @@
 {
  "title": "The lab's observers (public, in costume)",
  "mode": "monitor-only: no wallet, no orders, no proposals",
- "updatedAt": "2026-11-17T06:01:40.598000+00:00",
+ "updatedAt": "2026-11-18T06:08:18.729000+00:00",
  "freshness": {
   "state": "current",
-  "hoursSinceNewestPage": 23.2,
+  "hoursSinceNewestPage": 23.1,
   "staleAfterHours": 36
  },
  "totals": {
-  "days": 23,
-  "observedHours": 514.97,
-  "polls": 118866,
-  "candidates": 96895,
-  "clearedCosts": 12,
+  "days": 24,
+  "observedHours": 539.38,
+  "polls": 124618,
+  "candidates": 102383,
+  "clearedCosts": 13,
   "wouldHaveFired": 3,
-  "chases": 4949
+  "chases": 5231
  },
  "lanes": {
   "arbitrage": {
-   "latest": "2026-11-16",
-   "heartbeat": "Nov 16, 23:59 ET"
+   "latest": "2026-11-17",
+   "heartbeat": "Nov 17, 23:59 ET"
   },
   "perps": {
    "state": "not started",
@@ -28,14 +28,34 @@
  },
  "entries": [
   {
+   "date": "2026-11-17",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "24.41 h observed, 5,732 polls, 5,473 candidates, 1 cleared costs, 0 would have fired; 282 chases; best +0.000005 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
+   "stats": {
+    "observedHours": 24.41,
+    "polls": 5732,
+    "candidates": 5473,
+    "cleared": 1,
+    "wouldFire": 0,
+    "chases": 282,
+    "studyObservedHours": 539.38,
+    "studyTargetHours": 168,
+    "lastPoll": "Nov 17, 23:59 ET",
+    "block": 525233029
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-17/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-11-17.pdf"
+  },
+  {
    "date": "2026-11-16",
    "lane": "arbitrage",
    "partial": false,
-   "line": "24.39 h observed, 5,735 polls, 5,294 candidates, 0 cleared costs, 0 would have fired; 286 chases; best -0.000007 ETH on curious-oblique-egret Rowan Quay→Rowan Cross at 0.01 ETH.",
+   "line": "24.39 h observed, 5,755 polls, 5,309 candidates, 0 cleared costs, 0 would have fired; 286 chases; best -0.000007 ETH on curious-oblique-egret Rowan Quay→Rowan Cross at 0.01 ETH.",
    "stats": {
     "observedHours": 24.39,
-    "polls": 5735,
-    "candidates": 5294,
+    "polls": 5755,
+    "candidates": 5309,
     "cleared": 0,
     "wouldFire": 0,
     "chases": 286,
