@@ -2,16 +2,37 @@
   "lane": "arbitrage",
   "reports": [
     {
+      "date": "2026-11-20",
+      "partial": false,
+      "generatedAt": "2026-11-21T06:05:29.156Z",
+      "line": "24.34 h observed, 5,695 polls, 5,536 candidates, 2 cleared costs, 0 would have fired; 284 chases; best +0.000007 ETH on plucky-hollow-walrus Rowan Quay→Juniper at 0.05 ETH.",
+      "page": "arb/2026-11-20/README.md",
+      "pdf": "pdf/arb/2026-11-20.pdf",
+      "stats": {
+        "observedHours": 24.34,
+        "polls": 5695,
+        "candidates": 5536,
+        "cleared": 2,
+        "wouldFire": 0,
+        "chases": 284,
+        "studyObservedHours": 613,
+        "studyTargetHours": 168,
+        "lastPoll": "Nov 20, 23:59 ET",
+        "block": 526142696
+      },
+      "bytes": 8951
+    },
+    {
       "date": "2026-11-19",
       "partial": false,
-      "generatedAt": "2026-11-20T06:04:32.830Z",
-      "line": "24.86 h observed, 5,660 polls, 5,084 candidates, 0 cleared costs, 0 would have fired; 276 chases; best -0.000006 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
+      "generatedAt": "2026-11-21T06:05:28.704Z",
+      "line": "24.86 h observed, 5,680 polls, 5,102 candidates, 0 cleared costs, 0 would have fired; 276 chases; best -0.000006 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
       "page": "arb/2026-11-19/README.md",
       "pdf": "pdf/arb/2026-11-19.pdf",
       "stats": {
         "observedHours": 24.86,
-        "polls": 5660,
-        "candidates": 5084,
+        "polls": 5680,
+        "candidates": 5102,
         "cleared": 0,
         "wouldFire": 0,
         "chases": 276,
@@ -548,5 +569,5 @@
       "bytes": 4357
     }
   ],
-  "updatedAt": "2026-11-20T06:04:32.836Z"
+  "updatedAt": "2026-11-21T06:05:29.166Z"
 }
