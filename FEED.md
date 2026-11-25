@@ -6,10 +6,10 @@
 
 | Lane | State | Last heard |
 |---|---|---|
-| Arbitrage (DEX edge study) | current: page for 2026-11-22 | Nov 22, 23:59 ET |
+| Arbitrage (DEX edge study) | current: page for 2026-11-23 | Nov 23, 23:59 ET |
 | Perps listener | not started | not started |
 
-**So far:** 29 full days, 661.7 hours observed, 153,268 polls, 128,620 candidates, 15 cleared costs, **3 would have fired**, 6,626 chases.
+**So far:** 30 full days, 688.2 hours observed, 158,999 polls, 134,194 candidates, 17 cleared costs, **3 would have fired**, 6,907 chases.
 
 ## Following along
 
@@ -21,7 +21,8 @@
 
 | Date | The day in one line | Page | PDF |
 |---|---|---|---|
-| 2026-11-22 | 24.35 h observed, 5,736 polls, 4,754 candidates, 0 cleared costs, 0 would have fired; 273 chases; best -0.000004 ETH on plucky-hollow-walrus Rowan Cross→Rowan Quay at 0.05 ETH. | [page](arb/2026-11-22/README.md) | [PDF](pdf/arb/2026-11-22.pdf) |
+| 2026-11-23 | 26.52 h observed, 5,712 polls, 5,557 candidates, 2 cleared costs, 0 would have fired; 281 chases; best +0.000005 ETH on curious-umbral-gecko Rowan Quay→Juniper at 0.01 ETH. | [page](arb/2026-11-23/README.md) | [PDF](pdf/arb/2026-11-23.pdf) |
+| 2026-11-22 | 24.35 h observed, 5,755 polls, 4,771 candidates, 0 cleared costs, 0 would have fired; 273 chases; best -0.000004 ETH on plucky-hollow-walrus Rowan Cross→Rowan Quay at 0.05 ETH. | [page](arb/2026-11-22/README.md) | [PDF](pdf/arb/2026-11-22.pdf) |
 | 2026-11-21 | 24.35 h observed, 5,751 polls, 5,562 candidates, 0 cleared costs, 0 would have fired; 279 chases; best -0.000005 ETH on plucky-hollow-walrus Rowan Quay→Juniper at 0.05 ETH. | [page](arb/2026-11-21/README.md) | [PDF](pdf/arb/2026-11-21.pdf) |
 | 2026-11-20 | 24.34 h observed, 5,715 polls, 5,549 candidates, 2 cleared costs, 0 would have fired; 284 chases; best +0.000007 ETH on plucky-hollow-walrus Rowan Quay→Juniper at 0.05 ETH. | [page](arb/2026-11-20/README.md) | [PDF](pdf/arb/2026-11-20.pdf) |
 | 2026-11-19 | 24.86 h observed, 5,680 polls, 5,102 candidates, 0 cleared costs, 0 would have fired; 276 chases; best -0.000006 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH. | [page](arb/2026-11-19/README.md) | [PDF](pdf/arb/2026-11-19.pdf) |

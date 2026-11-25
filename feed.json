@@ -1,25 +1,25 @@
 {
  "title": "The lab's observers (public, in costume)",
  "mode": "monitor-only: no wallet, no orders, no proposals",
- "updatedAt": "2026-11-23T06:06:00.828000+00:00",
+ "updatedAt": "2026-11-24T06:05:31.178000+00:00",
  "freshness": {
   "state": "current",
   "hoursSinceNewestPage": 23.1,
   "staleAfterHours": 36
  },
  "totals": {
-  "days": 29,
-  "observedHours": 661.7,
-  "polls": 153268,
-  "candidates": 128620,
-  "clearedCosts": 15,
+  "days": 30,
+  "observedHours": 688.22,
+  "polls": 158999,
+  "candidates": 134194,
+  "clearedCosts": 17,
   "wouldHaveFired": 3,
-  "chases": 6626
+  "chases": 6907
  },
  "lanes": {
   "arbitrage": {
-   "latest": "2026-11-22",
-   "heartbeat": "Nov 22, 23:59 ET"
+   "latest": "2026-11-23",
+   "heartbeat": "Nov 23, 23:59 ET"
   },
   "perps": {
    "state": "not started",
@@ -28,14 +28,34 @@
  },
  "entries": [
   {
+   "date": "2026-11-23",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "26.52 h observed, 5,712 polls, 5,557 candidates, 2 cleared costs, 0 would have fired; 281 chases; best +0.000005 ETH on curious-umbral-gecko Rowan Quay→Juniper at 0.01 ETH.",
+   "stats": {
+    "observedHours": 26.52,
+    "polls": 5712,
+    "candidates": 5557,
+    "cleared": 2,
+    "wouldFire": 0,
+    "chases": 281,
+    "studyObservedHours": 688.22,
+    "studyTargetHours": 168,
+    "lastPoll": "Nov 23, 23:59 ET",
+    "block": 527021740
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-23/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-11-23.pdf"
+  },
+  {
    "date": "2026-11-22",
    "lane": "arbitrage",
    "partial": false,
-   "line": "24.35 h observed, 5,736 polls, 4,754 candidates, 0 cleared costs, 0 would have fired; 273 chases; best -0.000004 ETH on plucky-hollow-walrus Rowan Cross→Rowan Quay at 0.05 ETH.",
+   "line": "24.35 h observed, 5,755 polls, 4,771 candidates, 0 cleared costs, 0 would have fired; 273 chases; best -0.000004 ETH on plucky-hollow-walrus Rowan Cross→Rowan Quay at 0.05 ETH.",
    "stats": {
     "observedHours": 24.35,
-    "polls": 5736,
-    "candidates": 4754,
+    "polls": 5755,
+    "candidates": 4771,
     "cleared": 0,
     "wouldFire": 0,
     "chases": 273,
