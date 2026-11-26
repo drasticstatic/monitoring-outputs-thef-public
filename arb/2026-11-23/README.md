@@ -8,7 +8,7 @@
 
 </div>
 
-> **The day in one line.** 26.52 h observed, 5,712 polls, 5,557 candidates, 2 cleared costs, 0 would have fired; 281 chases; best +0.000005 ETH on curious-umbral-gecko Rowan Quay→Juniper at 0.01 ETH.
+> **The day in one line.** 26.52 h observed, 5,732 polls, 5,577 candidates, 2 cleared costs, 0 would have fired; 281 chases; best +0.000005 ETH on curious-umbral-gecko Rowan Quay→Juniper at 0.01 ETH.
 
 The study is monitor-only: it prices venues, quotes round trips with static calls and writes down what it saw. It holds no wallet and sends no transaction. Funding is decided by Christopher after the observed week, not by this page.
 
@@ -17,8 +17,8 @@ The study is monitor-only: it prices venues, quotes round trips with static call
 | Reading | Value |
 |---|---|
 | Observed today | **26.52 h** (distinct poll stamps; a gap over 2 h is not observed time) |
-| First to last poll | 23.92 h |
-| Polls · pair samples | 5,712 · 62,814 |
+| First to last poll | 24.00 h |
+| Polls · pair samples | 5,732 · 63,027 |
 | Pairs watched · pools priced | 11 · 73 |
 | Study to date (observed) | **688.22 h** of 168 h (409.7%) |
 | Study to date (calendar, to the last poll) | 703.25 h |
@@ -30,7 +30,7 @@ A candidate is a poll whose executable spread after pool fees reached the floor 
 
 | Candidates | Simulated | Cleared costs | Would have fired | Quote errors | Cleared net total | Gas, median |
 |---:|---:|---:|---:|---:|---:|---:|
-| 5,557 | 5,493 | 2 | **0** | 336 | +0.000007 ETH | 0.00001201 ETH |
+| 5,577 | 5,513 | 2 | **0** | 336 | +0.000007 ETH | 0.00001201 ETH |
 
 **Best routes of the day** (the five highest net results):
 
@@ -48,17 +48,17 @@ Spreads are gross between the cheapest and dearest venue each poll; "net" subtra
 
 | Pair | Samples | Median | p95 | Max | Median net | Max net | ≥ floor | ≥ threshold |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| nimble-woolly-zebra | 5,711 | 0.1322% | 1.8234% | 2.8089% | +0.0415% | +1.7840% | 4,013 | 940 |
-| steady-lunar-wombat | 5,711 | 0.9186% | 2.1192% | 2.6490% | +0.0333% | +1.5990% | 3,950 | 2,212 |
-| curious-oblique-egret | 5,711 | 0.0806% | 0.3375% | 1.3506% | +0.0532% | +0.3055% | 5,432 | 2 |
-| curious-umbral-gecko | 5,711 | 0.0376% | 0.0801% | 1.1623% | +0.0167% | +0.2886% | 4,734 | 0 |
-| plucky-hollow-walrus | 5,710 | 0.0258% | 0.0800% | 1.1852% | -0.0004% | +0.1752% | 2,773 | 0 |
-| wry-marbled-puffin | 5,707 | 0.3167% | 1.1869% | 1.2459% | -0.3070% | +0.1459% | 602 | 0 |
-| lucky-glacial-urchin | 5,710 | 0.0582% | 0.2896% | 0.4407% | -0.0612% | +0.0898% | 445 | 0 |
-| lucky-crystalline-narwhal | 5,710 | 0.0296% | 1.1882% | 1.3757% | -0.0450% | +0.0709% | 168 | 0 |
-| curious-lunar-otter | 5,712 | 0.0067% | 0.0162% | 0.0832% | -0.0099% | +0.0202% | 268 | 0 |
-| brisk-umbral-bison | 5,710 | 0.0208% | 1.1123% | 1.3747% | -0.0906% | +0.0168% | 3 | 0 |
-| witty-tangerine-walrus | 5,711 | 0.0020% | 0.0123% | 0.0207% | -0.0066% | +0.0016% | 11 | 0 |
+| nimble-woolly-zebra | 5,730 | 0.1315% | 1.8234% | 2.8089% | +0.0409% | +1.7840% | 4,020 | 940 |
+| steady-lunar-wombat | 5,730 | 1.0499% | 2.1192% | 2.6490% | +0.0337% | +1.5990% | 3,969 | 2,212 |
+| curious-oblique-egret | 5,731 | 0.0804% | 0.3375% | 1.3506% | +0.0531% | +0.3055% | 5,446 | 2 |
+| curious-umbral-gecko | 5,731 | 0.0376% | 0.0801% | 1.1623% | +0.0167% | +0.2886% | 4,752 | 0 |
+| plucky-hollow-walrus | 5,730 | 0.0258% | 0.0800% | 1.1852% | -0.0004% | +0.1752% | 2,786 | 0 |
+| wry-marbled-puffin | 5,726 | 0.3167% | 1.1869% | 1.2459% | -0.3077% | +0.1459% | 602 | 0 |
+| lucky-glacial-urchin | 5,729 | 0.0581% | 0.2896% | 0.4407% | -0.0612% | +0.0898% | 445 | 0 |
+| lucky-crystalline-narwhal | 5,730 | 0.0296% | 1.1882% | 1.3757% | -0.0451% | +0.0709% | 168 | 0 |
+| curious-lunar-otter | 5,731 | 0.0067% | 0.0162% | 0.0832% | -0.0099% | +0.0202% | 268 | 0 |
+| brisk-umbral-bison | 5,729 | 0.0208% | 1.1116% | 1.3747% | -0.0906% | +0.0168% | 3 | 0 |
+| witty-tangerine-walrus | 5,730 | 0.0020% | 0.0124% | 0.0207% | -0.0066% | +0.0016% | 11 | 0 |
 
 ## Chases and lifetimes
 
@@ -130,4 +130,4 @@ Round trips from this machine at 00:57 ET; head lag in blocks against the freshe
 
 ---
 
-<sub>Costume: pairs and venues wear stage names (a house per exchange, a ward per fee tier); depths are scaled by a secret factor per pair. Counts, spreads, gas, hours and outcomes are the real study. Written Nov 24, 01:05 ET by the arbitrage lane's nightly report; the PDF beside it is rendered by this repository's workflow. Index: [https://drasticstatic.github.io/monitoring-outputs-thef-public/](https://drasticstatic.github.io/monitoring-outputs-thef-public/) · live dashboard: [https://drasticstatic.github.io/trading-bot-arbitrage-public/](https://drasticstatic.github.io/trading-bot-arbitrage-public/).</sub>
+<sub>Costume: pairs and venues wear stage names (a house per exchange, a ward per fee tier); depths are scaled by a secret factor per pair. Counts, spreads, gas, hours and outcomes are the real study. Written Nov 25, 01:13 ET by the arbitrage lane's nightly report; the PDF beside it is rendered by this repository's workflow. Index: [https://drasticstatic.github.io/monitoring-outputs-thef-public/](https://drasticstatic.github.io/monitoring-outputs-thef-public/) · live dashboard: [https://drasticstatic.github.io/trading-bot-arbitrage-public/](https://drasticstatic.github.io/trading-bot-arbitrage-public/).</sub>
