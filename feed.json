@@ -1,25 +1,25 @@
 {
  "title": "The lab's observers (public, in costume)",
  "mode": "monitor-only: no wallet, no orders, no proposals",
- "updatedAt": "2026-11-25T06:13:57.891000+00:00",
+ "updatedAt": "2026-11-26T06:06:22.331000+00:00",
  "freshness": {
   "state": "current",
-  "hoursSinceNewestPage": 23.0,
+  "hoursSinceNewestPage": 23.1,
   "staleAfterHours": 36
  },
  "totals": {
-  "days": 31,
-  "observedHours": 712.91,
-  "polls": 164738,
-  "candidates": 139533,
+  "days": 32,
+  "observedHours": 737.6,
+  "polls": 170445,
+  "candidates": 144885,
   "clearedCosts": 17,
   "wouldHaveFired": 3,
-  "chases": 7191
+  "chases": 7473
  },
  "lanes": {
   "arbitrage": {
-   "latest": "2026-11-24",
-   "heartbeat": "Nov 24, 23:59 ET"
+   "latest": "2026-11-25",
+   "heartbeat": "Nov 25, 23:59 ET"
   },
   "perps": {
    "state": "not started",
@@ -28,14 +28,34 @@
  },
  "entries": [
   {
+   "date": "2026-11-25",
+   "lane": "arbitrage",
+   "partial": false,
+   "line": "24.69 h observed, 5,688 polls, 5,335 candidates, 0 cleared costs, 0 would have fired; 282 chases; best -0.000004 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
+   "stats": {
+    "observedHours": 24.69,
+    "polls": 5688,
+    "candidates": 5335,
+    "cleared": 0,
+    "wouldFire": 0,
+    "chases": 282,
+    "studyObservedHours": 737.59,
+    "studyTargetHours": 168,
+    "lastPoll": "Nov 25, 23:59 ET",
+    "block": 527636346
+   },
+   "page": "https://drasticstatic.github.io/monitoring-outputs-thef-public/arb/2026-11-25/README.md",
+   "pdf": "https://drasticstatic.github.io/monitoring-outputs-thef-public/pdf/arb/2026-11-25.pdf"
+  },
+  {
    "date": "2026-11-24",
    "lane": "arbitrage",
    "partial": false,
-   "line": "24.69 h observed, 5,719 polls, 5,319 candidates, 0 cleared costs, 0 would have fired; 284 chases; best -0.000007 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
+   "line": "24.69 h observed, 5,738 polls, 5,336 candidates, 0 cleared costs, 0 would have fired; 284 chases; best -0.000007 ETH on plucky-hollow-walrus Juniper→Rowan Quay at 0.05 ETH.",
    "stats": {
     "observedHours": 24.69,
-    "polls": 5719,
-    "candidates": 5319,
+    "polls": 5738,
+    "candidates": 5336,
     "cleared": 0,
     "wouldFire": 0,
     "chases": 284,
